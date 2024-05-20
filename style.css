@@ -1,0 +1,610 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    place-content: center;
+    padding-top: 1rem;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+header nav .navLinks {
+    min-width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul > li {
+    list-style: none;
+}
+
+header nav .logo {
+    width: 50px;
+    height: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #C6A0F8;
+}
+
+header nav .tafuta {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    border-radius: 500px;
+    padding-right: .5rem;
+}
+
+header nav .tafuta input {
+    background-color: #f1f1f1;
+    border-radius: 500px;
+    border: 0;
+    padding: 5px;
+}
+
+header nav .tafuta i {
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url("picha/heroBk.svg");
+    height: 100vh;
+    background-size: cover;
+    max-width: 100vw;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.heroContents {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    padding: 0 2rem 0 2rem;
+}
+
+.heroContents img {
+    position: absolute;
+    width: 90%;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.heroContents .taarifaZaClub .jinaLaClub h1 {
+    font-family: 'Arvo', 'serif';
+    font-size: 5rem;
+    line-height: 100px;
+}
+
+.heroContents .taarifaZaClub .jinaLaClub h3 {
+    font-size: 3rem;
+}
+
+.heroContents .taarifaZaClub {
+    min-height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    color: white;
+}
+
+.mechiInayofuata {
+    display: flex;
+    place-content: center;
+    color: black;
+    gap: 1.5rem;
+    max-width: 27.7rem;
+    height: 90px;
+    background-color: #f8f8f8;
+    border-radius: 400px;
+}
+
+.heroContents .mechiInayofuata .muda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContents .mechiInayofuata h4 {
+    font-family: 'Arvo', 'serif';
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: #4B188B;
+}
+
+.heroContents .mechiInayofuata p {
+    color: #262F3E;
+}
+
+.heroContents .mechiInayofuata .wakati {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.heroContents .mechiInayofuata .vsNyumbu {
+    display: flex;
+    place-content: center;
+}
+
+.heroContents .mechiInayofuata .vsNyumbu h4 {
+    display: flex;
+    align-items: center;
+}
+
+.heroContents .mechiInayofuata .dots {
+    height: 80%;
+    border: 1px dashed black;
+    align-self: flex-end;
+}
+
+.matokeo {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f1f1f1;
+    place-items: center;
+    gap: 3rem;
+    padding: 3rem 2rem 3rem 2rem;
+    min-height: 240px;
+}
+
+.matokeo .cards {
+    display: flex;
+    place-content: center;
+    gap: 1rem 4.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.matokeo .matokeoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    border-radius: 24px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 280px;
+    min-height: 120px;
+
+}
+
+.matokeo .matokeoContainer img {
+    width: 50px;
+    height: auto;
+}
+
+.matokeo .matokeoContainer .matokeoText {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+}
+
+.matokeo .matokeoContainer .league, .tarehe {
+    font-size: 0.785rem;
+    color: #6C757D;
+    line-height: 24px;
+    margin: 0.5rem;
+}
+
+.matokeo .matokeoContainer .magoli {
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #262F3E;
+    font-weight: bold;
+}
+
+.matokeo .heading {
+    text-align: left;
+}
+
+.matokeo .heading p {
+    font-size: 1.125rem;
+    color: #4B188B;
+    line-height: 35px;
+    letter-spacing: 5px;
+}
+
+.matokeo .heading h2 {
+    font-size: 2rem;
+    line-height: 40px;
+    color: #262F3E;
+    font-family: 'Arvo', 'serif';
+    letter-spacing: 5px;
+}
+
+.navKikosi {
+    background-color: #C6A0F8;
+}
+
+.navKikosi a:hover {
+    color: #262F3E;
+}
+
+.kikosi {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    align-items: center;
+    background-color: #C6A0F8;
+}
+
+.kikosi .cards .mchezaji {
+    position: relative;
+    min-height: 360px;
+    max-width: 244px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px, rgb(0, 0, 0, 0.07);
+}
+
+.kikosi .cards  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+    place-items: center;
+}
+
+.kikosi .cards .mchezaji img {
+    width: 100%;
+    height: auto;
+}
+
+.kikosi h2 {
+    color: #4B188B;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Arvo', 'serif';
+}
+
+.kikosi h3 {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #C6A0F8;
+}
+
+.kikosi .wasifu {
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+.kikosi .wasifu h5 {
+    font-size: 1rem;
+    line-height: 30px;
+    color: #4B188B;
+}
+
+.kikosi .wasifu p {
+    font-size: 0.875rem;
+    color: #787878;
+}
+
+.footerKikosi {
+    background-color: #C6A0F8;
+}
+
+/* msimamo */
+.msimamo {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 2rem;
+}
+
+.msimamo p {
+    color: #4B188B;
+    font-size: 1.5rem;
+}
+
+.msimamo h2, .picha h2 {
+    color: #262F3E;
+}
+
+.msimamo h2, .mafanikio h2, .picha h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'Arvo', 'serif';
+    margin-bottom: 2rem;
+}
+
+.msimamo td, th {
+    padding: 10px 50px 10px 50px;
+}
+
+.msimamo td {
+    border-bottom: 1px solid #878787;
+    font-size: 14px;
+}
+
+.msimamo table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.msimamo .headers {
+    background-color: #d9d9d9;
+    font-family: 'Arvo', 'serif';
+}
+
+.msimamo th:first-child {
+    border-radius: 100px 0 0 100px;
+}
+
+.msimamo th:last-child {
+    border-radius: 0 100px 100px 0;
+}
+/* 
+mafanikio */
+.mafanikio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B188B;
+    min-height: 90vh;
+    padding: 6rem 2rem 6rem 2rem;
+    color: white;
+}
+
+.mafanikio .makombe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mafanikio .subTitle {
+    background: #C6A0F8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mafanikio h2 {
+    margin-top: 2rem;
+}
+
+.mafanikio .makombe .kombe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mafanikio .makombe .kombe h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: 'Arvo', 'serif';
+}
+
+.mafanikio #mafanikioPara {
+    max-width: 60%;
+}
+
+.mafanikio .makombe .kombe img {
+    max-width: 250px;
+    margin: 2rem;
+}
+
+/* picha */
+
+.picha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem 6rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.picha img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pichaContainer {
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('picha/footerBackground.svg');
+    background-color: #f8f8f8;
+    color: #f8f8f8;
+    padding: 3rem 1rem 3rem 1rem;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+footer .footerChini, footer .footerJuu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+footer .footerChini img {
+    width: 50px;
+    height: auto;
+}
+
+footer .footerJuu {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerJuu .formContainer input, button {
+    outline: 0;
+    border: 0;
+    padding: 15px;
+}
+
+footer .footerJuu input {
+    border-radius: 100px 0 0 100px;
+}
+
+footer .footerJuu button {
+    border-radius: 0 100px 100px 0;
+    font-weight: bold;
+    background-color: #4B188B;
+    cursor: pointer;
+    color: white;
+}
+
+footer .footerJuu button:hover {
+    background-color: #C6A0F8;
+    color: #262F3E;
+}
+
+footer form {
+    font-size: 0;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer .address p {
+    line-height: 2rem;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #e3e3e3;
+}
+
+footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer .footerChini .socials a {
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #f8f8f8;
+    border: 1px solid #787878;
+    padding: 10px;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+footer .footerChini .socials a:hover {
+    background-color: #4B188B;
+    color: #f8f8f8;
+    border: 0;
+}
+
+@media (max-width: 1300px) {
+    .matokeo .cards {
+        flex-wrap: wrap;
+        grid-row: 2;
+    }
+
+    .matokeo {
+        grid-template-columns: auto;
+    }
+
+    .msimamo {
+        overflow-x: hidden;
+    }
+    
+    .msimamo table {
+        overflow-x: auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .mafanikio #mafanikioPara {
+        max-width: 90%;
+    }
+
+    footer .footerChini, footer .footerJuu {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .heroContents .taarifaZaClub .jinaLaClub h1 {
+        font-size: 3.5rem;
+    }
+
+    .heroContents .taarifaZaClub .jinaLaClub h3 {
+        font-size: 2rem;
+    }
+    
+    .heroContents .mechiInayofuata .vsNyumbu h4  {
+        font-size: 1rem;
+    }
+
+    .mechiInayofuata {
+        gap: .5rem;
+    }
+
+    .heroContents .mechiInayofuata .wakati {
+        margin: .3rem;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header .navLinks {
+        gap: 1rem;
+        font-size: .7rem;
+    }
+}
